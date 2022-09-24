@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/teal_200">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                tools:textColor="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:startIconDrawable="@drawable/ic_cart"
+                tools:visibility="visible"></com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/ItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="2"
+                android:padding="4dp"
+                android:text="Name"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:textSize="20sp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/teal_200"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/Quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quantity"
+                android:textColor="@color/teal_200"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹"
+                android:textColor="@color/teal_200"
+                android:textSize="19sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/Rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1.5"
+                android:padding="4dp"
+                android:text="Rate"
+                android:textColor="@color/teal_200"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="3dp"
+                android:padding="4dp"
+                app:tint="#A8A7A7"
+                android:src="@drawable/ic_delete"
+                android:id="@+id/Delete"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LL1"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toLeftOf="@+id/totalAmt"
+            android:background="@drawable/rounded_corner"
+            android:elevation="15dp"
+            android:padding="4dp"
+            android:text="   Total Amount   "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LL1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="4dp"
+            android:text="Amount ₹"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
+
+
